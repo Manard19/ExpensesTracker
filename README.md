@@ -2,7 +2,7 @@
 
 A full-stack web app for recording personal expenses. You can add, edit, delete and filter expenses, and see a summary and a category chart. Everything is stored in a PostgreSQL database.
 
-- **GitHub repo:** [YOUR-REPO-LINK](YOUR-REPO-LINK)
+- **GitHub repo:** [https://github.com/Manard19/ExpensesTracker](https://github.com/Manard19/ExpensesTracker)
 - **Demo:** [https://drive.google.com/file/d/1svN3CAfJYMwpO3Ep3w1GB5mBwithP24F/view?usp=sharing](https://drive.google.com/file/d/1svN3CAfJYMwpO3Ep3w1GB5mBwithP24F/view?usp=sharing)
 
 ## How to run
