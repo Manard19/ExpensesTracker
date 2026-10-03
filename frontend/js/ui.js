@@ -17,13 +17,14 @@ export function hideSpinner() {
 }
 
 export function renderTable(expenses) {
-    const tableBody = document.getElementById("expenseTableBody");
+    const tableBody = document.getElementById("expenseTableBody");//gettiing yhe table body
+    //to clear it out
 
     tableBody.innerHTML = "";
 
     expenses.forEach(function(expense) {
         const row = document.createElement("tr");
-        const badgeColor = badgeColors[expense.category] || "bg-secondary";
+        const badgeColor = badgeColors[expense.category];
 
         row.innerHTML = `
             <td>${expense.title}</td>
@@ -86,9 +87,11 @@ export function renderChart(expenses) {
     };
 
     expenses.forEach(function(expense) {
-        const key = expense.category in categoryTotals
-            ? expense.category
-            : "Other";
+       let key = "Other";
+
+    if (expense.category in categoryTotals) {
+         key = expense.category;
+        }   
 
         categoryTotals[key] += Number(expense.amount);
     });
@@ -114,7 +117,7 @@ export function renderChart(expenses) {
 
         options: {
             responsive: true,
-            maintainAspectRatio: false,
+            maintainAspectRatio: false,//no auto controll css does thay
 
             plugins: {
                 legend: {
